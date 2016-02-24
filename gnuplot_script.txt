@@ -1,0 +1,10 @@
+set style line 1 lw 1 pt 0 lc rgb "gray"
+set style line 2 lw 1 pt 7 lc rgb "red"
+set style line 3 lw 1 pt 5 lc rgb "blue"
+set offsets 0.5, 0.5, 0.5, 0.5
+
+set size ratio -1
+
+plot 'data_1_lines.txt'  title "Маршрут"		with lines  ls 1, \
+     'data_2_points.txt' title "Исходные точки" 	with points ls 2, \
+     'data_3_result.txt' title "Результат"		with points ls 3
