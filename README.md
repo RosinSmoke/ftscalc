@@ -15,7 +15,7 @@ Calculator of Fermat-Torricelli-Steiner point coordinates for a set of input poi
 
 ###Usage
 
-Put _input.txt_ data file into the same folder with _points.exe_ and _"output"_ folder. By default calculations are done in Euclidean distance, but you may set the metric adding 1, 2, 3 or 4 as launch key in console (Euclidean, taxicab, taxicab in custom coordinate system and chessboard distance accordingly).
+Put _input.txt_ data file into the same folder with _points.exe_. By default calculations are done in Euclidean distance, but you may set the metric adding 1, 2, 3 or 4 as launch key in console (Euclidean, taxicab, taxicab in custom coordinate system and chessboard distance accordingly).
 
 Input points' coordinates should be formatted like
 
@@ -26,7 +26,7 @@ x2 y2
 ```
 
 
-Afrer running _points.exe_ you can find the result in _output/data_3_result.txt_ file.
+Afrer running _points.exe_ you can find the result in data_3_result.txt_ file.
 
 ###Graphs
 If you have gnuplot installed, there are 4 batch scripts included so you could see what the result looks like in "reality". Demo input and gnuplot script are included in root and "output" folders accordingly.
