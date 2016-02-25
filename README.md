@@ -2,16 +2,16 @@
 Calculator of Fermat-Torricelli-Steiner point coordinates for a set of input points
 
 ###Features:
- - **Optimized search**: instead of slicing search area into a big grid (classic attempt) and searching for a cell with minimum value of FTS function, this code continues slicing the "minimum" cell again until you have the desired precision. So instead of **O(N\*M)** operations with too big *N* and *M* grid sizes you can use small *n* and *m* values (currently 3\*3 grid) and get the **O(n\*m\*steps)** operations. 
- - **Set the precision** instead of calculating it from the affordable grid size. Each step gives you observational error of _(n^(-j))*(axis\_max-axis\_min)_ (where j is number of step), so the slicing can be stopped when the "minimum" cell is smaller than allowed observational error
- - Calculations in **different [p-norms](https://en.wikipedia.org/wiki/Lp_space#The_p-norm_in_finite_dimensions)** : 
+ - **Optimized search**: instead of slicing search area into a big grid (usual approach) and searching for a cell with minimum value of FTS function, this code continues slicing the "minimum" cell again until you have the desired precision. So instead of **O(N\*M)** operations with time-expensive large *N* and *M* grid sizes you can use small grid (currently 3\*3 grid) and get the **O(n\*m\*steps)** operations. 
+ - **Set the precision** instead of calculating it from the affordable grid size. Each step gives you observational error of _(n^(-j))\*(axis\_max - axis\_min)_ (where j is number of step), so the slicing can be stopped when the "minimum" cell is smaller than allowed observational error
+ - Calculations in **[different p-norms](https://en.wikipedia.org/wiki/Lp_space#The_p-norm_in_finite_dimensions)** : 
 * L\_2 metric ([Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance))
 * L\_1 metric ([Taxicab distance](https://en.wikipedia.org/wiki/Manhattan_distance)) 
 * L\_infinity ([Chessboard distance](https://en.wikipedia.org/wiki/Chebyshev_distance))
  - Custom affin coordinates system for L\_1
 
 
- The program was built using TDM-GCC 4.9.2 with Dev-C++ 5.11 on MS Windows, I didn't test it on unix-based systems or in Cygwin, but there should not be any major issues building it elswhere.
+The program was built using TDM-GCC 4.9.2 with Dev-C++ 5.11 on MS Windows. (I didn't test it on unix-based OS or in Cygwin, but there should not be any major issues building it elsewhere since it's the GCC port.)
 
 ###Usage
 
