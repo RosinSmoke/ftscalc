@@ -2,7 +2,7 @@
 Calculator of Fermat-Torricelli-Steiner point coordinates for a set of input points
 
 ###Features:
- - **Optimized search**: instead of slicing search area into a big grid (usual approach) and searching for a cell with minimum value of FTS function, this code continues slicing the "minimum" cell again until you have the desired precision. So instead of **O(N\*M)** operations with time-expensive large *N* and *M* grid sizes you can use small grid (currently 3x3) and get the **O(n\*m\*steps)** operations. 
+ - **Optimized search**: instead of slicing search area into a big grid (usual approach) and searching for a cell with minimum value of FTS function, this code continues slicing the "minimum" cell again until you have the desired precision. So instead of **O(N\*M)** operations with time-expensive large *N* and *M* grid sizes you can use small grid (currently 3x3) and get the **O(n\*m\*steps)** operations. [Click fot the block-scheme](https://raw.githubusercontent.com/RosinSmoke/content/master/block-scheme.png "Click fot the block-scheme").
  - **Set the precision** instead of calculating it from the affordable grid size. Each step gives you observational error of _(n^(-j))\*current_cell_size_ (where j is number of step), so the slicing can be stopped when the "minimum" cell is smaller than allowed observational error
  - Calculations in **[different p-norms](https://en.wikipedia.org/wiki/Lp_space#The_p-norm_in_finite_dimensions)** : 
 * L\_2 metric ([Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance))
