@@ -35,7 +35,7 @@ If you have gnuplot installed, there are 4 batch scripts included so you could s
 ![](https://raw.githubusercontent.com/RosinSmoke/content/master/euclidis.png)
 
 ######Taxicab
-(Actually, ane point from green area is a FTS point)
+(Actually, any point from green area is a FTS point)
 ![](https://raw.githubusercontent.com/RosinSmoke/content/master/taxicab.png)
 
 ######Taxicab with custom affin coordinate system
